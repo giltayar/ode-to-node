@@ -27,6 +27,11 @@
   "devDependencies": {
     "jquery-slim": "^3.0.0",
     "jsdom": "^9.4.5",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "react-addons-test-utils": "^15.3.1"
+  },
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
   }
 }
