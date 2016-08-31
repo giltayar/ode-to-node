@@ -1,0 +1,31 @@
+{
+  "name": "ode-to-node",
+  "version": "1.0.0",
+  "description": "The Code for the ReactNext 2016 Lightning Talk",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giltayar/ode-to-node.git"
+  },
+  "keywords": [
+    "lightning-talk",
+    "presentation",
+    "talk",
+    "react",
+    "tests",
+    "node"
+  ],
+  "author": "Gil Tayar <gil@tayar.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giltayar/ode-to-node/issues"
+  },
+  "homepage": "https://github.com/giltayar/ode-to-node#readme",
+  "devDependencies": {
+    "jsdom": "^9.4.5",
+    "mocha": "^3.0.2"
+  }
+}
