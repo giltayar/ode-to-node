@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/giltayar/ode-to-node#readme",
   "devDependencies": {
+    "jquery-slim": "^3.0.0",
     "jsdom": "^9.4.5",
     "mocha": "^3.0.2"
   }
