@@ -4,7 +4,8 @@
   "description": "The Code for the ReactNext 2016 Lightning Talk",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --require babel-register",
+    "unit:karma": "karma start karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,16 @@
   },
   "homepage": "https://github.com/giltayar/ode-to-node#readme",
   "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-register": "^6.14.0",
+    "chai": "^3.5.0",
+    "enzyme": "^2.4.1",
     "jquery-slim": "^3.0.0",
     "jsdom": "^9.4.5",
+    "karma": "^1.3.0",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.1.1",
     "mocha": "^3.0.2",
     "react-addons-test-utils": "^15.3.1"
   },

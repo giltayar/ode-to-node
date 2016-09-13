@@ -1,0 +1,10 @@
+{
+  "env": {
+    "development": {
+      "plugins": ["transform-react-jsx"]
+    },
+    "production": {
+      "presets": ["es2015", "react"]
+    }
+  }
+}
