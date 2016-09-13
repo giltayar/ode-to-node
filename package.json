@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --require babel-register",
-    "unit:karma": "karma start karma.conf.js --single-run"
+    "unit:karma": "karma start karma.conf.js --single-run",
+    "unit:karma-babel": "karma start karma-babel.conf.js --single-run"
   },
   "repository": {
     "type": "git",
