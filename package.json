@@ -8,7 +8,8 @@
     "unit:karma": "karma start karma.conf.js --single-run",
     "unit:karma-babel": "karma start karma-babel.conf.js --single-run",
     "unit:just-mocha": "mocha test/unit.spec.js",
-    "unit:mocha-babel": "mocha test/unit.spec.js --require babel-register"
+    "unit:mocha-babel": "mocha test/unit.spec.js --require babel-register",
+    "unit:mocha-jsdom": "mocha test/unit-jsdom.spec.js --require babel-register"
   },
   "repository": {
     "type": "git",
