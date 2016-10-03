@@ -7,7 +7,7 @@
     "test": "mocha --require babel-register",
     "unit:karma": "karma start karma.conf.js --single-run",
     "unit:karma-babel": "karma start karma-babel.conf.js --single-run",
-    "unit:just-mocha": "mocha test/unit.spec.js",
+    "unit:just-mocha":  "NODE_ENV=test mocha --opts ./mocha.opts",
     "unit:mocha-babel": "mocha test/unit.spec.js --require babel-register",
     "unit:mocha-jsdom": "mocha test/unit-jsdom.spec.js --require babel-register"
   },
@@ -30,8 +30,13 @@
   },
   "homepage": "https://github.com/giltayar/ode-to-node#readme",
   "devDependencies": {
+    "babel-register": "^6.16.3",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.14.0",
     "babel-plugin-transform-react-jsx": "^6.8.0",
-    "babel-register": "^6.14.0",
+    "babel-preset-react": "^6.3.13",
+    "babel-plugin-react-transform": "^2.0.0-beta1",
     "chai": "^3.5.0",
     "enzyme": "^2.4.1",
     "jquery-slim": "^3.0.0",
