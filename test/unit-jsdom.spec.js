@@ -1,27 +1,13 @@
-const {describe, it} = require('mocha')
-const {expect} = require('chai')
-const jsdom = require('jsdom')
-const jQuery = require('jquery-slim')
-
 describe('Counter (jsdom)', function() {
   let Counter
-  let React
-  let reactDOM
+
 
   beforeEach(function() {
-    global.document = jsdom.jsdom('<div id="mount-point">Hello, World<div>')
-    global.window = document.defaultView
-    global.navigator = window.navigator
-
-    React = require('react')
-    reactDOM = require('react-dom')
     Counter = require('../src/Counter')
   })
 
   it('should include an <a> with a - sign', function() {
-    reactDOM.render(<Counter/>, document.getElementById('mount-point'))
-
-    const $ = jQuery(window)
+    reactDOM.render(<Counter/>, document.getElementById('root'))
     expect($('a')).to.have.length(2)
     expect($('a:eq(0)').text()).to.equal('-')
 
