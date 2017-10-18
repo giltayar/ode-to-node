@@ -4,7 +4,7 @@ const {shallow} = require('enzyme')
 const React = require('react')
 const Counter = require('../src/Counter')
 
-describe('Counter', function() {
+describe('Counter (enzyme)', function() {
   it('should include an <a> with a - sign', function() {
     const counterElement = shallow(<Counter />)
 

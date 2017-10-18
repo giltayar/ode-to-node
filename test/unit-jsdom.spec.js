@@ -1,4 +1,4 @@
-const {describe, it} = require('mocha')
+const {describe, it, beforeEach} = require('mocha')
 const {expect} = require('chai')
 const jsdom = require('jsdom')
 const jQuery = require('jquery-slim')

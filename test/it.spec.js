@@ -1,9 +1,10 @@
-const {describe, it} = require('mocha')
+const {describe, it, beforeEach} = require('mocha')
 const {expect} = require('chai')
 const jsdom = require('jsdom')
 const jQuery = require('jquery-slim')
 
 describe('reactApp', function() {
+  let reactApp
   beforeEach(function() {
     global.document = jsdom.jsdom('<div id="mount-point">Hello, World<div>')
     global.window = document.defaultView

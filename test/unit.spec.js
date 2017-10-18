@@ -2,7 +2,7 @@ const {describe, it} = require('mocha')
 const {expect} = require('chai')
 const React = require('react')
 const Counter = require('../src/Counter')
-const ReactTestUtils = require('react-addons-test-utils')
+const ReactTestUtils = require('react-dom/test-utils')
 
 describe('Counter (ReactTestUtils)', function() {
   it('should include an <a> with a - sign', function() {

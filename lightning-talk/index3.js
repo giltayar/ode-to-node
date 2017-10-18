@@ -4,7 +4,7 @@ global.document = window.document
 global.navigator = window.navigator
 
 const reactApp = require('./ReactApp.js')
-const ReactTestUtils = require('react-addons-test-utils');
+const ReactTestUtils = require('react-dom/test-utils')
 
 const $ = require('jquery-slim')
 
